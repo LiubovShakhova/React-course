@@ -28,10 +28,6 @@ const H1 = styled.h1`
 const ImgLogo = styled.img`
   width: 50px;
 `;
-const User = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 const ImgSign = styled.img`
   width: 32px;
   margin-bottom: 7px;
@@ -40,7 +36,6 @@ const Login = styled.button`
   align-items: center;
   display: flex;
   flex-direction: column;  
-  cursor: pointer;
   background-color: transparent;
   border-color: transparent;
   color: white;
@@ -49,14 +44,14 @@ const Login = styled.button`
 `;
 
 export const NavBar = () => (
-  <NavBarStyled>
-    <Logo>
-      <ImgLogo src={logoImg} alt="logo"/>
-      <H1>MrDonald's</H1>
-    </Logo>
-    <Login>
-    <ImgSign src={signImg} alt="user"/>
-      войти
-    </Login>
-  </NavBarStyled>
-)
+	<NavBarStyled>
+		<Logo>
+			<ImgLogo src={logoImg} alt="logo"/>
+			<H1>MrDonald's</H1>
+		</Logo>
+		<Login>
+			<ImgSign src={signImg} alt="user"/>
+			<p>войти</p>
+		</Login>
+	</NavBarStyled>
+);
